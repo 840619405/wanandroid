@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="home_articles">
+        <item>热门</item>
+        <item>问答</item>
+        <item>广场</item>
+        <item>体系</item>
+    </array>
+    <array name="home_article_types">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>0</item>
+    </array>
+</resources>

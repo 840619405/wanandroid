@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.MineFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@color/purple_700"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/user_icon_iv"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/baseline_account_circle_24" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/user_nice_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="鸿洋"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/mine_nav"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="start"
+        android:layout_weight="1"
+        app:menu="@menu/menu_mine" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:background="@color/purple_700"
+        android:id="@+id/login_out_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/login_out" />
+</LinearLayout>

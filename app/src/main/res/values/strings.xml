@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">wanandroid</string>
+    <string name="title_home">首页</string>
+    <string name="title_blog">公众号</string>
+    <string name="title_search">搜索</string>
+    <string name="title_project">项目</string>
+    <string name="title_mine">我的</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="hot">热门</string>
+    <string name="answers">问答</string>
+    <string name="plaza">广场</string>
+    <string name="system">体系</string>
+
+    <string name="collecting">收藏</string>
+    <string name="open_source_address">开源地址</string>
+    <string name="open_source_url">https://github.com/840619405/wanandroid</string>
+
+    <string name="login_out">退出登录</string>
+    <string name="prompt_email">请输入用户名</string>
+
+    <string name="user_input">1234567890qwertyuiopasdfghjklzxcvbnm</string>
+    <string name="prompt_password">请输入密码</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="login">登录</string>
+    <string name="login_and_register">注册并登录</string>
+    <string name="login_type_login">直接登录</string>
+
+    <string name="invalid_username">用户名的长度要大于5</string>
+    <string name="invalid_password">密码的长度要大于5</string>
+</resources>

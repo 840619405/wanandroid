@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+<!--        <item-->
+<!--            android:id="@+id/menu_collecting"-->
+<!--            android:icon="@drawable/baseline_cloud_24"-->
+<!--            android:title="@string/collecting" />-->
+        <item
+            android:id="@+id/menu_open_source"
+            android:icon="@drawable/outline_fmd_good_24"
+            android:title="@string/open_source_address" />
+    </group>
+</menu>

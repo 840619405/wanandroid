@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.ArticleTabFragment">
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/home_bar_linlayout"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_700">
+        <ImageView
+            android:id="@+id/home_back_iv"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/home_title"
+            android:layout_marginLeft="20dp"
+            android:textSize="26sp"
+            android:textColor="@color/white"
+            android:text="Android sutdio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <com.google.android.material.tabs.TabLayout
+        app:tabMode="scrollable"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        android:background="@color/purple_700"
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"/>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

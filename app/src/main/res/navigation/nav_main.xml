@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/blogFragment"
+        android:name="com.hjy.wanandroid.ui.fragment.ArticleTabFragment"
+        android:label="fragment_blog"
+        tools:layout="@layout/fragment_blog" />
+    <fragment
+        android:id="@+id/mineFragment"
+        android:name="com.hjy.wanandroid.ui.fragment.MineFragment"
+        android:label="fragment_mine"
+        tools:layout="@layout/fragment_mine" >
+        <action
+            android:id="@+id/action_mineFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/action_mineFragment_to_collectActivity"
+            app:destination="@id/collectActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/projectFragment"
+        android:name="com.hjy.wanandroid.ui.fragment.ProjectFragment"
+        android:label="fragment_project"
+        tools:layout="@layout/fragment_project" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.hjy.wanandroid.ui.fragment.ArticleTabFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_article_tab" >
+        <action
+            android:id="@+id/action_homeFragment_self"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.hjy.wanandroid.ui.fragment.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/fragmentArticlelist"
+        android:name="com.hjy.wanandroid.ui.fragment.ArticleListFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_article_list" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.hjy.wanandroid.ui.activity.LoginActivity"
+        android:label="LoginActivity" />
+    <activity
+        android:id="@+id/collectActivity"
+        android:name="com.hjy.wanandroid.ui.activity.CollectActivity"
+        android:label="activity_collect"
+        tools:layout="@layout/activity_collect" />
+</navigation>
